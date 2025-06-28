@@ -1,42 +1,28 @@
 # emotion-detection-svm
 Classical ML (SVM) approach on extracted facial feature
 
-# Emotion Detection with CNN & ESP32 LED Indicator 💡😄
+# Emotion Detection using SVM 😊📊
 
-This project combines image-based facial emotion detection using a Convolutional Neural Network (CNN) and an ESP32 microcontroller. The system detects a user's emotion from a live webcam feed and transmits the result to an ESP32 over serial communication (UART), which then lights up an RGB LED based on the detected emotion.
+This project performs facial emotion classification using a Support Vector Machine (SVM). It uses extracted features from facial images and trains a classical machine learning model to classify emotions such as happy, sad, angry, and surprised.
 
----
 
 ## 🧠 Features
 
-- Real-time facial emotion detection using CNN
-- Serial communication between Python and ESP32 (UART)
-- RGB LED feedback for detected emotions
-- Lightweight, efficient model for fast inference
-- Easily extendable to IoT applications (e.g., smart devices)
+- Facial emotion classification using SVM
+- Feature extraction from facial landmarks or image pixels
+- Trained and tested on emotion datasets (e.g., FER2013, JAFFE)
+- High accuracy with classical ML approach
+- Lightweight and fast for small applications
 
----
 
-## 📦 Tech Stack
+## 💻 Tech Stack
 
-- **Frontend**: OpenCV (for webcam video capture)
-- **Backend**: Python (TensorFlow/Keras-based CNN)
-- **Hardware**: ESP32, RGB LED
-- **Communication**: UART (Serial) via USB
-- **Model**: Trained on FER2013 dataset
+- **Language**: Python
+- **Libraries**:
+  - OpenCV (for image handling and face detection)
+  - Scikit-learn (SVM, preprocessing)
+  - NumPy, pandas, matplotlib
+- **Optional**: dlib or Mediapipe (for facial landmarks)
 
----
 
-```
-emotion-iot-esp32-cnn/
-├── esp32_code/ # Arduino code for ESP32
-│ └── emotion_led.ino
-├── python_code/ # CNN-based detection in Python
-│ ├── detect_emotion.py
-│ ├── model.h5 # Trained CNN model
-│ └── utils.py
-├── images/ # Demo screenshots or system photos
-├── requirements.txt # Python dependencies
-├── README.md
-└── LICENSE
-```
+
