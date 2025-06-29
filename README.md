@@ -5,6 +5,9 @@ Classical ML (SVM) approach on extracted facial feature
 
 This project performs facial emotion classification using a Support Vector Machine (SVM). It uses extracted features from facial images and trains a classical machine learning model to classify emotions such as happy, sad, angry, and surprised.
 
+The input image is first converted into HOG (Histogram of Oriented Gradients) features, which are then used to extract key parameters for training the SVM classifier.
+
+Haarcascade.xml is used for object detection; in our project, we use it to detect faces, which are then classified using a SVM algorithm.
 
 ## 🧠 Features
 
