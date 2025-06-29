@@ -52,8 +52,8 @@ You can switch the method in feature_extraction.py.
 📈 Results
 ```
 Emotion	Accuracy (%)
-Happy	89%
-Sad	85%
-Angry	83%
+Happy	    89%
+Sad	      85%
+Angry	    83%
 Surprise	91%
 ```
